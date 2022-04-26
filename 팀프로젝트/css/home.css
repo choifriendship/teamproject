@@ -16,7 +16,7 @@ header{
     float: left;
     width: 600px; height: 200px;
       }
-        #header_logo > img {
+        #header_logo > a > img {
           width: 400px; height: 110px;
           margin: 40px 40px 40px 60px;
         }
@@ -26,15 +26,31 @@ header{
         width: 900px; height: 200px;
       }
         /*헤더사이드*/
-        #header_navi > div {
+        #header_navi > li {
+          display: inline-block;
           position: relative;
-          left: 300px;
-          top: 30px;
+          top: 40px;
+          left: 100px;
         }
-        #header_navi > div > a > img {
-          float: left;
-          width: 45px; height: 45px;
-          margin: 40px;
+        #header_navi > li > a {
+          display: inline-block;
+          position: relative;
+          padding-bottom: 19px;
+          margin: 50px;
+          bottom: 30px;
+          left: 100px;
+        }
+        #header_navi > li > a > img {
+          width: 50px; height: 50px;
+        }
+        #header_navi > li > a > span {
+          position: absolute;
+          left: 50%;
+          line-height: 1.4em;
+          white-space: nowrap;
+          transform: translate(-50%, 0);
+          top: 50px;
+          color: black;
         }
 /*메뉴검색*/
 #navigation{
@@ -45,17 +61,13 @@ header{
 }
         /*네비*/
         nav{
-          position: relative;
           float: left;
           width: 1200px;  height: 100px;
-          
-    
         }
         ul{
           list-style: none;
         }
         #sideBar>li{
-          position: relative;
           width:230px;  height: 100px;
           float: left;
           line-height: 3.4;
@@ -75,14 +87,12 @@ header{
           display: none;
           background-color:  rgb(255,255,255,0.6);
           margin: 0;
-          font-size: 25px;
+          font-size: 20px;
           font-weight: 500;
-          line-height: 3.0;
+          line-height: 2.0;
           padding: 10px;
           color: black;
-          right: 1px;
-          
-        
+          width: 210px;
         }
         #sideBar>li ul a{
           text-decoration: none;
@@ -173,11 +183,12 @@ section{
         .link{
           float: left;
           width: 350px; height: 250px;
-          background-color: aliceblue;
           margin: 10px;
         }
-        .link > img {
-          width: 350px; height: 250px;
+        .link > a > img {
+          position: relative;
+          left: 50px;
+          width: 270px; height: 270px;
         }
         
         
@@ -206,7 +217,10 @@ footer{
           width: 750px; height: 100px;
           background-color: white;
         }
-
+        #copyright > p > span {
+          color: black;
+          font-size: small;
+        }
         
         /*텍스트박스*/
         #footer_text{
