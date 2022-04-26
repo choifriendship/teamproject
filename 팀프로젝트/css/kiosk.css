@@ -83,16 +83,8 @@
       transform: translateY(-150px);/*설명글이 위로 170px 이동하게*/
     }
     
-    .icecream .caption h2, p{
-      color: #fff;
-      text-align: center;
-      font-size: 20px;
-      line-height: 40px;
-    }
-
       /*아이스크림 케이크*/
 
-      
       .tabContent > .cake{
         width: 250px;
         height: 200px;
@@ -128,13 +120,6 @@
     .cake:hover .caption{
       opacity: 1;/*설명글이 화면에 보이게*/
       transform: translateY(-150px);/*설명글이 위로 170px 이동하게*/
-    }
-
-    .cake .caption h2, p{
-      color: #fff;
-      text-align: center;
-      font-size: 20px;
-      line-height: 40px;
     }
 /*음료*/
 
@@ -175,7 +160,7 @@ opacity: 1;/*설명글이 화면에 보이게*/
 transform: translateY(-150px);/*설명글이 위로 170px 이동하게*/
 }
 
-.drink .caption h2, p{
+.caption h2, .caption p{
   color: #fff;
   text-align: center;
   font-size: 20px;
