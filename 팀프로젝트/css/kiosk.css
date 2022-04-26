@@ -19,14 +19,14 @@
       }
       
       #tab_box label:hover{
-        color: wheat;
+        color: rgb(236, 4, 198);
         cursor: pointer;
       }
       
       #tab_box input:checked + label{
-        color: #b00;
+        color: rgb(255, 255, 255);
         border: 1px solid #ddd;
-        background-color: #eee;
+        background-color: rgb(255, 202, 202);
       }
       
       .tabContent{
@@ -185,12 +185,58 @@ button{
   border: 0;
   width: 50px; 
   font-size: larger;
-  color: rgb(250, 187, 247);
+  color: rgb(255, 160, 241);
+  border: 1px solid #ddd;
+  background-color: white;
+  cursor: pointer;
 }
 
       /*장바구니*/
       #cart{
         width: 450px; height: 600px;
         float: left;
-        background-color:burlywood;
       }
+
+      #cartTitle{
+        text-align: center;
+        width: 450px; height: 76px;
+        font-size: x-large;
+        line-height: 4.0;
+      }
+
+      #cartTEXT{
+        width: 450px; height: 440px;
+        border-top:  1px solid #ddd;
+        border-bottom:  1px solid #ddd;
+        overflow: scroll;
+        -ms-overflow-style: none;
+        scrollbar-width:none;
+      }
+      #cartTEXT .p::-webkit-scrollbar { 
+        display: none;
+        width: 0 !important;
+    }
+    #cartTEXT p{
+      font-size: x-large;
+    }
+
+      #cartTotal{
+        text-align: center;
+        width: 450px; height: 80px;
+       position: relative;
+       top: 15px;
+      }
+      #cartTotal input{
+        border: 0;
+        width: 200px; 
+        outline: none;
+      }
+      #cartTotal button{
+        width: 80px;
+        border-radius: 10px;
+        padding: 2px;
+        cursor: pointer;
+
+      }
+
+ 
