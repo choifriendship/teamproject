@@ -21,24 +21,24 @@ next.addEventListener('click',function(){
 
 
 // 장바구니
-var f1 = new item("그린티",3800,1); 
+var f1 = new item("그     린    티",3800,1); 
 var f2 = new item("사랑에빠진 딸기",3800,1); 
-var f3 = new item("아몬드봉봉",3800,1); 
-var f4 = new item("엄마는외계인",3800,1); 
-var f5 = new item("초코나무숲",3800,1); 
-var f6 = new item("뉴욕치즈케이크",3800,1); 
-var g1 = new item("듀얼와츄원케이크",25000,1); 
+var f3 = new item("아 몬 드  봉 봉",3800,1); 
+var f4 = new item("엄 마 는 외 계 인",3800,1); 
+var f5 = new item("초 코  나 무   숲",3800,1); 
+var f6 = new item("뉴 욕 치 즈 케이크",3800,1); 
+var g1 = new item("듀얼와츄원  케이크",25000,1); 
 var g2 = new item("해피버스데이케이크",25000,1); 
-var g3 = new item("어피치케이크",25000,1);
-var g4 = new item("마카롱케이크",25000,1);
-var g5 = new item("라이언케이크",25000,1);
-var g6 = new item("뚱랑이케이크",25000,1);
-var h1 = new item("딸기연유라떼",3500,1);
-var h2 = new item("아이스티",3500,1);
+var g3 = new item("어 피 치 케 이 크",25000,1);
+var g4 = new item("마 카 롱 케 이 크",25000,1);
+var g5 = new item("라 이 언 케 이 크",25000,1);
+var g6 = new item("뚱 랑 이 케 이 크",25000,1);
+var h1 = new item("딸 기 연 유 라 떼",3500,1);
+var h2 = new item("아   이   스   티",3500,1);
 var h3 = new item("엄마는외계인블라스트",3500,1);
-var h4 = new item("와츄원쉐이크",3500,1);
-var h5 = new item("카푸치노블라스트",3500,1);
-var h6 = new item("핫초코",3500,1);
+var h4 = new item("와 츄 원 쉐 이 크",3500,1);
+var h5 = new item("카푸치노 블라스트",3500,1);
+var h6 = new item("핫  초  코",3500,1);
 var a11=0;a66=0;a22=0;a33=0;a44=0;a55=0;
 var b11=0;b22=0;b33=0;b44=0;b55=0;b66=0;
 var c11=0;c22=0;c33=0;c44=0;c55=0;c66=0;
@@ -73,7 +73,7 @@ document.querySelector('#reset').addEventListener('click',function(){
 document.querySelector('#a1').addEventListener('click',function(){
   var i = document.querySelector('#aa1');
   if(i.innerHTML==""){  
-  i.innerHTML=f1.name+"&nbsp;"+f1.val+"&nbsp;"+f1.qua+"&emsp;"+"<button id='a1p' onclick='a1p()'>+</button>"+"<button id='a1m' onclick='a1m()'>-</button>";
+  i.innerHTML=f1.name+"&nbsp;&nbsp;&nbsp;"+f1.val+"&nbsp;"+f1.qua+"&emsp;"+"<button id='a1p' onclick='a1p()'>+</button>"+"<button id='a1m' onclick='a1m()'>-</button>";
   total+=f1.val;
   t.value=total;  
   }else{
@@ -84,14 +84,14 @@ document.querySelector('#a1').addEventListener('click',function(){
 function a1p(){
   f1.qua++;
   var i = document.querySelector('#aa1');
-  i.innerHTML=f1.name+"&nbsp;"+f1.val+"&nbsp;"+f1.qua+"&emsp;"+"<button id='a1p' onclick='a1p()'>+</button>"+"<button id='a1m' onclick='a1m()'>-</button>";
+  i.innerHTML=f1.name+"&nbsp;&nbsp;&nbsp;"+f1.val+"&nbsp;"+f1.qua+"&emsp;"+"<button id='a1p' onclick='a1p()'>+</button>"+"<button id='a1m' onclick='a1m()'>-</button>";
   total+=f1.val;
   t.value=total;
 }
 function a1m(){
   f1.qua--;  
   var i = document.querySelector('#aa1');
-  i.innerHTML=f1.name+"&nbsp;"+f1.val+"&nbsp;"+f1.qua+"&emsp;"+"<button id='a1p' onclick='a1p()'>+</button>"+"<button id='a1m' onclick='a1m()'>-</button>";
+  i.innerHTML=f1.name+"&nbsp;&nbsp;&nbsp;"+f1.val+"&nbsp;"+f1.qua+"&emsp;"+"<button id='a1p' onclick='a1p()'>+</button>"+"<button id='a1m' onclick='a1m()'>-</button>";
   total-=f1.val;
   t.value=total;
   if(f1.qua==0){
@@ -105,7 +105,7 @@ function a1m(){
 document.querySelector('#a2').addEventListener('click',function(){
   if(a22==0){
   var i = document.querySelector('#aa2');
-  i.innerHTML=f2.name+"&nbsp;"+f2.val+"&nbsp;"+f2.qua+"&emsp;"+"<button id='a2p' onclick='a2p()'>+</button>"+"<button id='a2m' onclick='a2m()'>-</button>";
+  i.innerHTML=f2.name+"&nbsp;&nbsp;&nbsp;"+f2.val+"&nbsp;"+f2.qua+"&emsp;"+"<button id='a2p' onclick='a2p()'>+</button>"+"<button id='a2m' onclick='a2m()'>-</button>";
   total+=f2.val;
   t.value=total;
   a22++;
@@ -117,14 +117,14 @@ document.querySelector('#a2').addEventListener('click',function(){
 function a2p(){
   f2.qua++;
   var i = document.querySelector('#aa2');
-  i.innerHTML=f2.name+"&nbsp;"+f2.val+"&nbsp;"+f2.qua+"&emsp;"+"<button id='a2p' onclick='a2p()'>+</button>"+"<button id='a2m' onclick='a2m()'>-</button>";
+  i.innerHTML=f2.name+"&nbsp;&nbsp;&nbsp;"+f2.val+"&nbsp;"+f2.qua+"&emsp;"+"<button id='a2p' onclick='a2p()'>+</button>"+"<button id='a2m' onclick='a2m()'>-</button>";
   total+=f2.val;
   t.value=total;
 }
 function a2m(){
   f2.qua--;  
   var i = document.querySelector('#aa2');
-  i.innerHTML=f2.name+"&nbsp;"+f2.val+"&nbsp;"+f2.qua+"&emsp;"+"<button id='a2p' onclick='a2p()'>+</button>"+"<button id='a2m' onclick='a2m()'>-</button>";
+  i.innerHTML=f2.name+"&nbsp;&nbsp;&nbsp;"+f2.val+"&nbsp;"+f2.qua+"&emsp;"+"<button id='a2p' onclick='a2p()'>+</button>"+"<button id='a2m' onclick='a2m()'>-</button>";
   total-=f2.val;
   t.value=total;
   if(f2.qua==0){
@@ -139,7 +139,7 @@ function a2m(){
 document.querySelector('#a3').addEventListener('click',function(){
   if(a33==0){
   var i = document.querySelector('#aa3');
-  i.innerHTML=f3.name+"&nbsp;"+f3.val+"&nbsp;"+f3.qua+"&emsp;"+"<button id='a3p' onclick='a3p()'>+</button>"+"<button id='a3m' onclick='a3m()'>-</button>";
+  i.innerHTML=f3.name+"&nbsp;&nbsp;&nbsp;"+f3.val+"&nbsp;"+f3.qua+"&emsp;"+"<button id='a3p' onclick='a3p()'>+</button>"+"<button id='a3m' onclick='a3m()'>-</button>";
   total+=f3.val;
   t.value=total;
   a33++;
@@ -151,14 +151,14 @@ document.querySelector('#a3').addEventListener('click',function(){
 function a3p(){
   f3.qua++;
   var i = document.querySelector('#aa3');
-  i.innerHTML=f3.name+"&nbsp;"+f3.val+"&nbsp;"+f3.qua+"&emsp;"+"<button id='a3p' onclick='a3p()'>+</button>"+"<button id='a3m' onclick='a3m()'>-</button>";
+  i.innerHTML=f3.name+"&nbsp;&nbsp;&nbsp;"+f3.val+"&nbsp;"+f3.qua+"&emsp;"+"<button id='a3p' onclick='a3p()'>+</button>"+"<button id='a3m' onclick='a3m()'>-</button>";
   total+=f3.val;
   t.value=total;
 }
 function a3m(){
   f3.qua--;  
   var i = document.querySelector('#aa3');
-  i.innerHTML=f3.name+"&nbsp;"+f3.val+"&nbsp;"+f3.qua+"&emsp;"+"<button id='a3p' onclick='a3p()'>+</button>"+"<button id='a3m' onclick='a3m()'>-</button>";
+  i.innerHTML=f3.name+"&nbsp;&nbsp;&nbsp;"+f3.val+"&nbsp;"+f3.qua+"&emsp;"+"<button id='a3p' onclick='a3p()'>+</button>"+"<button id='a3m' onclick='a3m()'>-</button>";
   total-=f3.val;
   t.value=total;
   if(f3.qua==0){
@@ -171,7 +171,7 @@ function a3m(){
 document.querySelector('#a4').addEventListener('click',function(){
   if(a44==0){
   var i = document.querySelector('#aa4');
-  i.innerHTML=f4.name+"&nbsp;"+f4.val+"&nbsp;"+f4.qua+"&emsp;"+"<button id='a4p' onclick='a4p()'>+</button>"+"<button id='a4m' onclick='a4m()'>-</button>";
+  i.innerHTML=f4.name+"&nbsp;&nbsp;&nbsp;"+f4.val+"&nbsp;"+f4.qua+"&emsp;"+"<button id='a4p' onclick='a4p()'>+</button>"+"<button id='a4m' onclick='a4m()'>-</button>";
   total+=f4.val;
   t.value=total;
   a44++;
@@ -183,14 +183,14 @@ document.querySelector('#a4').addEventListener('click',function(){
 function a4p(){
   f4.qua++;
   var i = document.querySelector('#aa4');
-  i.innerHTML=f4.name+"&nbsp;"+f4.val+"&nbsp;"+f4.qua+"&emsp;"+"<button id='a4p' onclick='a4p()'>+</button>"+"<button id='a4m' onclick='a4m()'>-</button>";
+  i.innerHTML=f4.name+"&nbsp;&nbsp;&nbsp;"+f4.val+"&nbsp;"+f4.qua+"&emsp;"+"<button id='a4p' onclick='a4p()'>+</button>"+"<button id='a4m' onclick='a4m()'>-</button>";
   total+=f4.val;
   t.value=total;
 }
 function a4m(){
   f4.qua--;  
   var i = document.querySelector('#aa4');
-  i.innerHTML=f4.name+"&nbsp;"+f4.val+"&nbsp;"+f4.qua+"&emsp;"+"<button id='a4p' onclick='a4p()'>+</button>"+"<button id='a4m' onclick='a4m()'>-</button>";
+  i.innerHTML=f4.name+"&nbsp;&nbsp;&nbsp;"+f4.val+"&nbsp;"+f4.qua+"&emsp;"+"<button id='a4p' onclick='a4p()'>+</button>"+"<button id='a4m' onclick='a4m()'>-</button>";
   total-=f4.val;
   t.value=total;
   if(f4.qua==0){
@@ -203,7 +203,7 @@ function a4m(){
 document.querySelector('#a5').addEventListener('click',function(){
   if(a55==0){
   var i = document.querySelector('#aa5');
-  i.innerHTML=f5.name+"&nbsp;"+f5.val+"&nbsp;"+f5.qua+"&emsp;"+"<button id='a5p' onclick='a5p()'>+</button>"+"<button id='a5m' onclick='a5m()'>-</button>";
+  i.innerHTML=f5.name+"&nbsp;&nbsp;&nbsp;"+f5.val+"&nbsp;"+f5.qua+"&emsp;"+"<button id='a5p' onclick='a5p()'>+</button>"+"<button id='a5m' onclick='a5m()'>-</button>";
   total+=f5.val;
   t.value=total;
   a55++;
@@ -215,14 +215,14 @@ document.querySelector('#a5').addEventListener('click',function(){
 function a5p(){
   f5.qua++;
   var i = document.querySelector('#aa5');
-  i.innerHTML=f5.name+"&nbsp;"+f5.val+"&nbsp;"+f5.qua+"&emsp;"+"<button id='a5p' onclick='a5p()'>+</button>"+"<button id='a5m' onclick='a5m()'>-</button>";
+  i.innerHTML=f5.name+"&nbsp;&nbsp;&nbsp;"+f5.val+"&nbsp;"+f5.qua+"&emsp;"+"<button id='a5p' onclick='a5p()'>+</button>"+"<button id='a5m' onclick='a5m()'>-</button>";
   total+=f5.val;
   t.value=total;
 }
 function a5m(){
   f5.qua--;  
   var i = document.querySelector('#aa5');
-  i.innerHTML=f5.name+"&nbsp;"+f5.val+"&nbsp;"+f5.qua+"&emsp;"+"<button id='a5p' onclick='a5p()'>+</button>"+"<button id='a5m' onclick='a5m()'>-</button>";
+  i.innerHTML=f5.name+"&nbsp;&nbsp;&nbsp;"+f5.val+"&nbsp;"+f5.qua+"&emsp;"+"<button id='a5p' onclick='a5p()'>+</button>"+"<button id='a5m' onclick='a5m()'>-</button>";
   total-=f5.val;
   t.value=total;
   if(f5.qua==0){
@@ -235,7 +235,7 @@ function a5m(){
 document.querySelector('#a6').addEventListener('click',function(){
   if(a66==0){
   var i = document.querySelector('#aa6');
-  i.innerHTML=f6.name+"&nbsp;"+f6.val+"&nbsp;"+f6.qua+"&emsp;"+"<button id='a6p' onclick='a6p()'>+</button>"+"<button id='a6m' onclick='a6m()'>-</button>";
+  i.innerHTML=f6.name+"&nbsp;&nbsp;&nbsp;"+f6.val+"&nbsp;"+f6.qua+"&emsp;"+"<button id='a6p' onclick='a6p()'>+</button>"+"<button id='a6m' onclick='a6m()'>-</button>";
   total+=f6.val;
   t.value=total;
   a66++;
@@ -247,14 +247,14 @@ document.querySelector('#a6').addEventListener('click',function(){
 function a6p(){
   f6.qua++;
   var i = document.querySelector('#aa6');
-  i.innerHTML=f6.name+"&nbsp;"+f6.val+"&nbsp;"+f6.qua+"&emsp;"+"<button id='a6p' onclick='a6p()'>+</button>"+"<button id='a6m' onclick='a6m()'>-</button>";
+  i.innerHTML=f6.name+"&nbsp;&nbsp;&nbsp;"+f6.val+"&nbsp;"+f6.qua+"&emsp;"+"<button id='a6p' onclick='a6p()'>+</button>"+"<button id='a6m' onclick='a6m()'>-</button>";
   total+=f6.val;
   t.value=total;
 }
 function a6m(){
   f6.qua--;  
   var i = document.querySelector('#aa6');
-  i.innerHTML=f6.name+"&nbsp;"+f6.val+"&nbsp;"+f6.qua+"&emsp;"+"<button id='a6p' onclick='a6p()'>+</button>"+"<button id='a6m' onclick='a6m()'>-</button>";
+  i.innerHTML=f6.name+"&nbsp;&nbsp;&nbsp;"+f6.val+"&nbsp;"+f6.qua+"&emsp;"+"<button id='a6p' onclick='a6p()'>+</button>"+"<button id='a6m' onclick='a6m()'>-</button>";
   total-=f6.val;
   t.value=total;
   if(f6.qua==0){
@@ -459,7 +459,7 @@ function b6m(){
 document.querySelector('#c1').addEventListener('click',function(){
   if(c11==0){
   var i = document.querySelector('#cc1');
-  i.innerHTML=h1.name+"&nbsp;"+h1.val+"&nbsp;"+h1.qua+"&emsp;"+"<button id='c1p' onclick='c1p()'>+</button>"+"<button id='c1m' onclick='c1m()'>-</button>";
+  i.innerHTML=h1.name+"&nbsp;&nbsp;&nbsp;"+h1.val+"&nbsp;"+h1.qua+"&emsp;"+"<button id='c1p' onclick='c1p()'>+</button>"+"<button id='c1m' onclick='c1m()'>-</button>";
   total+=h1.val;
   t.value=total;
   c11++;
@@ -471,14 +471,14 @@ document.querySelector('#c1').addEventListener('click',function(){
 function c1p(){
   h1.qua++;
   var i = document.querySelector('#cc1');
-  i.innerHTML=h1.name+"&nbsp;"+h1.val+"&nbsp;"+h1.qua+"&emsp;"+"<button id='c1p' onclick='c1p()'>+</button>"+"<button id='c1m' onclick='c1m()'>-</button>";
+  i.innerHTML=h1.name+"&nbsp;&nbsp;&nbsp;"+h1.val+"&nbsp;"+h1.qua+"&emsp;"+"<button id='c1p' onclick='c1p()'>+</button>"+"<button id='c1m' onclick='c1m()'>-</button>";
   total+=h1.val;
   t.value=total;
 }
 function c1m(){
   h1.qua--;  
   var i = document.querySelector('#cc1');
-  i.innerHTML=h1.name+"&nbsp;"+h1.val+"&nbsp;"+h1.qua+"&emsp;"+"<button id='c1p' onclick='c1p()'>+</button>"+"<button id='c1m' onclick='c1m()'>-</button>";
+  i.innerHTML=h1.name+"&nbsp;&nbsp;&nbsp;"+h1.val+"&nbsp;"+h1.qua+"&emsp;"+"<button id='c1p' onclick='c1p()'>+</button>"+"<button id='c1m' onclick='c1m()'>-</button>";
   total-=h1.val;
   t.value=total;
   if(h1.qua==0){
@@ -491,7 +491,7 @@ function c1m(){
 document.querySelector('#c2').addEventListener('click',function(){
   if(c22==0){
   var i = document.querySelector('#cc2');
-  i.innerHTML=h2.name+"&nbsp;"+h2.val+"&nbsp;"+h2.qua+"&emsp;"+"<button id='c2p' onclick='c2p()'>+</button>"+"<button id='c2m' onclick='c2m()'>-</button>";
+  i.innerHTML=h2.name+"&nbsp;&nbsp;&nbsp;"+h2.val+"&nbsp;"+h2.qua+"&emsp;"+"<button id='c2p' onclick='c2p()'>+</button>"+"<button id='c2m' onclick='c2m()'>-</button>";
   total+=h2.val;
   t.value=total;
   c22++;
@@ -503,14 +503,14 @@ document.querySelector('#c2').addEventListener('click',function(){
 function c2p(){
   h2.qua++;
   var i = document.querySelector('#cc2');
-  i.innerHTML=h2.name+"&nbsp;"+h2.val+"&nbsp;"+h2.qua+"&emsp;"+"<button id='c2p' onclick='c2p()'>+</button>"+"<button id='c2m' onclick='c2m()'>-</button>";
+  i.innerHTML=h2.name+"&nbsp;&nbsp;&nbsp;"+h2.val+"&nbsp;"+h2.qua+"&emsp;"+"<button id='c2p' onclick='c2p()'>+</button>"+"<button id='c2m' onclick='c2m()'>-</button>";
   total+=h2.val;
   t.value=total;
 }
 function c2m(){
   h2.qua--;  
   var i = document.querySelector('#cc2');
-  i.innerHTML=h2.name+"&nbsp;"+h2.val+"&nbsp;"+h2.qua+"&emsp;"+"<button id='c2p' onclick='c2p()'>+</button>"+"<button id='c2m' onclick='c2m()'>-</button>";
+  i.innerHTML=h2.name+"&nbsp;&nbsp;&nbsp;"+h2.val+"&nbsp;"+h2.qua+"&emsp;"+"<button id='c2p' onclick='c2p()'>+</button>"+"<button id='c2m' onclick='c2m()'>-</button>";
   total-=h2.val;
   t.value=total;
   if(h2.qua==0){
@@ -523,7 +523,7 @@ function c2m(){
 document.querySelector('#c3').addEventListener('click',function(){
   if(c33==0){
   var i = document.querySelector('#cc3');
-  i.innerHTML=h3.name+"&nbsp;"+h3.val+"&nbsp;"+h3.qua+"&emsp;"+"<button id='c3p' onclick='c3p()'>+</button>"+"<button id='c3m' onclick='c3m()'>-</button>";
+  i.innerHTML=h3.name+"&nbsp;&nbsp;&nbsp;"+h3.val+"&nbsp;"+h3.qua+"&emsp;"+"<button id='c3p' onclick='c3p()'>+</button>"+"<button id='c3m' onclick='c3m()'>-</button>";
   total+=h3.val;
   t.value=total;
   c33++;
@@ -535,14 +535,14 @@ document.querySelector('#c3').addEventListener('click',function(){
 function c3p(){
   h3.qua++;
   var i = document.querySelector('#cc3');
-  i.innerHTML=h3.name+"&nbsp;"+h3.val+"&nbsp;"+h3.qua+"&emsp;"+"<button id='c3p' onclick='c3p()'>+</button>"+"<button id='c3m' onclick='c3m()'>-</button>";
+  i.innerHTML=h3.name+"&nbsp;&nbsp;&nbsp;"+h3.val+"&nbsp;"+h3.qua+"&emsp;"+"<button id='c3p' onclick='c3p()'>+</button>"+"<button id='c3m' onclick='c3m()'>-</button>";
   total+=h3.val;
   t.value=total;
 }
 function c3m(){
   h3.qua--;  
   var i = document.querySelector('#cc3');
-  i.innerHTML=h3.name+"&nbsp;"+h3.val+"&nbsp;"+h3.qua+"&emsp;"+"<button id='c3p' onclick='c3p()'>+</button>"+"<button id='c3m' onclick='c3m()'>-</button>";
+  i.innerHTML=h3.name+"&nbsp;&nbsp;&nbsp;"+h3.val+"&nbsp;"+h3.qua+"&emsp;"+"<button id='c3p' onclick='c3p()'>+</button>"+"<button id='c3m' onclick='c3m()'>-</button>";
   total-=h3.val;
   t.value=total;
   if(h3.qua==0){
@@ -555,7 +555,7 @@ function c3m(){
 document.querySelector('#c4').addEventListener('click',function(){
   if(c44==0){
   var i = document.querySelector('#cc4');
-  i.innerHTML=h4.name+"&nbsp;"+h4.val+"&nbsp;"+h4.qua+"&emsp;"+"<button id='c4p' onclick='c4p()'>+</button>"+"<button id='c4m' onclick='c4m()'>-</button>";
+  i.innerHTML=h4.name+"&nbsp;&nbsp;&nbsp;"+h4.val+"&nbsp;"+h4.qua+"&emsp;"+"<button id='c4p' onclick='c4p()'>+</button>"+"<button id='c4m' onclick='c4m()'>-</button>";
   total+=h4.val;
   t.value=total;
   c44++;
@@ -567,14 +567,14 @@ document.querySelector('#c4').addEventListener('click',function(){
 function c4p(){
   h4.qua++;
   var i = document.querySelector('#cc4');
-  i.innerHTML=h4.name+"&nbsp;"+h4.val+"&nbsp;"+h4.qua+"&emsp;"+"<button id='c4p' onclick='c4p()'>+</button>"+"<button id='c4m' onclick='c4m()'>-</button>";
+  i.innerHTML=h4.name+"&nbsp;&nbsp;&nbsp;"+h4.val+"&nbsp;"+h4.qua+"&emsp;"+"<button id='c4p' onclick='c4p()'>+</button>"+"<button id='c4m' onclick='c4m()'>-</button>";
   total+=h4.val;
   t.value=total;
 }
 function c4m(){
   h4.qua--;  
   var i = document.querySelector('#cc4');
-  i.innerHTML=h4.name+"&nbsp;"+h4.val+"&nbsp;"+h4.qua+"&emsp;"+"<button id='c4p' onclick='c4p()'>+</button>"+"<button id='c4m' onclick='c4m()'>-</button>";
+  i.innerHTML=h4.name+"&nbsp;&nbsp;&nbsp;"+h4.val+"&nbsp;"+h4.qua+"&emsp;"+"<button id='c4p' onclick='c4p()'>+</button>"+"<button id='c4m' onclick='c4m()'>-</button>";
   total-=h4.val;
   t.value=total;
   if(h4.qua==0){
@@ -587,7 +587,7 @@ function c4m(){
 document.querySelector('#c5').addEventListener('click',function(){
   if(c55==0){
   var i = document.querySelector('#cc5');
-  i.innerHTML=h5.name+"&nbsp;"+h5.val+"&nbsp;"+h5.qua+"&emsp;"+"<button id='c5p' onclick='c5p()'>+</button>"+"<button id='c5m' onclick='c5m()'>-</button>";
+  i.innerHTML=h5.name+"&nbsp;&nbsp;&nbsp;"+h5.val+"&nbsp;"+h5.qua+"&emsp;"+"<button id='c5p' onclick='c5p()'>+</button>"+"<button id='c5m' onclick='c5m()'>-</button>";
   total+=h5.val;
   t.value=total;
   c55++;
@@ -599,14 +599,14 @@ document.querySelector('#c5').addEventListener('click',function(){
 function c5p(){
   h5.qua++;
   var i = document.querySelector('#cc5');
-  i.innerHTML=h5.name+"&nbsp;"+h5.val+"&nbsp;"+h5.qua+"&emsp;"+"<button id='c5p' onclick='c5p()'>+</button>"+"<button id='c5m' onclick='c5m()'>-</button>";
+  i.innerHTML=h5.name+"&nbsp;&nbsp;&nbsp;"+h5.val+"&nbsp;"+h5.qua+"&emsp;"+"<button id='c5p' onclick='c5p()'>+</button>"+"<button id='c5m' onclick='c5m()'>-</button>";
   total+=h5.val;
   t.value=total;
 }
 function c5m(){
   h5.qua--;  
   var i = document.querySelector('#cc5');
-  i.innerHTML=h5.name+"&nbsp;"+h5.val+"&nbsp;"+h5.qua+"&emsp;"+"<button id='c5p' onclick='c5p()'>+</button>"+"<button id='c5m' onclick='c5m()'>-</button>";
+  i.innerHTML=h5.name+"&nbsp;&nbsp;&nbsp;"+h5.val+"&nbsp;"+h5.qua+"&emsp;"+"<button id='c5p' onclick='c5p()'>+</button>"+"<button id='c5m' onclick='c5m()'>-</button>";
   total-=h5.val;
   t.value=total;
   if(h5.qua==0){
@@ -619,7 +619,7 @@ function c5m(){
 document.querySelector('#c6').addEventListener('click',function(){
   if(c66==0){
   var i = document.querySelector('#cc6');
-  i.innerHTML=h6.name+"&nbsp;"+h6.val+"&nbsp;"+h6.qua+"&emsp;"+"<button id='c6p' onclick='c6p()'>+</button>"+"<button id='c6m' onclick='c6m()'>-</button>";
+  i.innerHTML=h6.name+"&nbsp;&nbsp;&nbsp;"+h6.val+"&nbsp;"+h6.qua+"&emsp;"+"<button id='c6p' onclick='c6p()'>+</button>"+"<button id='c6m' onclick='c6m()'>-</button>";
   total+=h6.val;
   t.value=total;
   c66++;
@@ -631,14 +631,14 @@ document.querySelector('#c6').addEventListener('click',function(){
 function c6p(){
   h6.qua++;
   var i = document.querySelector('#cc6');
-  i.innerHTML=h6.name+"&nbsp;"+h6.val+"&nbsp;"+h6.qua+"&emsp;"+"<button id='c6p' onclick='c6p()'>+</button>"+"<button id='c6m' onclick='c6m()'>-</button>";
+  i.innerHTML=h6.name+"&nbsp;&nbsp;&nbsp;"+h6.val+"&nbsp;"+h6.qua+"&emsp;"+"<button id='c6p' onclick='c6p()'>+</button>"+"<button id='c6m' onclick='c6m()'>-</button>";
   total+=h6.val;
   t.value=total;
 }
 function c6m(){
   h6.qua--;  
   var i = document.querySelector('#cc6');
-  i.innerHTML=h6.name+"&nbsp;"+h6.val+"&nbsp;"+h6.qua+"&emsp;"+"<button id='c6p' onclick='c6p()'>+</button>"+"<button id='c6m' onclick='c6m()'>-</button>";
+  i.innerHTML=h6.name+"&nbsp;&nbsp;&nbsp;"+h6.val+"&nbsp;"+h6.qua+"&emsp;"+"<button id='c6p' onclick='c6p()'>+</button>"+"<button id='c6m' onclick='c6m()'>-</button>";
   total-=h6.val;
   t.value=total;
   if(h6.qua==0){
