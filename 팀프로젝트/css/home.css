@@ -115,6 +115,7 @@ header{
         #search{
           float: left;
           width: 300px; height: 100px;
+          text-decoration: none;
         }
         #search input{
           border: 0;
