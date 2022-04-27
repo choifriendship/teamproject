@@ -234,11 +234,11 @@ footer{
 
         #footer_text > a > img{
          display: block;
-         margin: 5px 350px;
+         margin: 5px 565px;
         }
 
         #footer_sns > a > img{
-          margin: 0 auto;
-          margin: 0px 0px 5px 72px;
+          float: right;
+          margin: 0px 0px 5px 5px;
           padding: 5px 0px 0px 0px;
         }
