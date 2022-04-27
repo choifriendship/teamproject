@@ -46,6 +46,8 @@ var c11=0;c22=0;c33=0;c44=0;c55=0;c66=0;
 var p = document.querySelectorAll('#cartTEXT > p');
 var t = document.querySelector('#to'); 
 var total=0;
+var confi = document.querySelector('#confi');
+
 
 function item(a,b,c){
   this.name = a;
@@ -54,6 +56,20 @@ function item(a,b,c){
 }
 var n1 = [a11,a22,a33,a44,a55,a66,b11,b22,b33,b44,b55,b66,c11,c22,c33,c44,c55,c66];    
 var s1 = [f1,f2,f3,f4,f5,f6,g1,g2,g3,g4,g5,g6,h1,h2,h3,h4,h5,h6];
+
+function reset(){
+  for(let i=0;i<p.length;i++){
+    p[i].innerHTML="";
+  }
+  for(let j=0;j<18;j++){
+    s1[j].qua=1;   
+  }
+  a66=0;a22=0;a33=0;a44=0;a55=0;
+  b11=0;b22=0;b33=0;b44=0;b55=0;b66=0;
+  c11=0;c22=0;c33=0;c44=0;c55=0;c66=0;  
+  total=0;
+  t.value=null;
+}
 document.querySelector('#reset').addEventListener('click',function(){
   for(let i=0;i<p.length;i++){
     p[i].innerHTML="";
@@ -66,7 +82,19 @@ document.querySelector('#reset').addEventListener('click',function(){
   c11=0;c22=0;c33=0;c44=0;c55=0;c66=0;  
   total=0;
   t.value=null;
-  console.log(a11);
+  
+});
+
+conf.addEventListener('click',function(){
+  if(total !=0){    
+    confi.style.display='block';
+    document.querySelector('.contanier').style.opacity='0.1';        
+  }
+});
+confi.addEventListener('click',function(){
+  confi.style.display='none';
+    document.querySelector('.contanier').style.opacity='1.0';
+    reset();     
 });
 
 ///////////////////////////////////노가다시작//////////////////////////////////////////

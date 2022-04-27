@@ -227,5 +227,32 @@ button{
         cursor: pointer;
 
       }
+      #confi{
+        color: white;
+        line-height: 1.1;
+        text-align: center;
+        font-size: 400px;
+        display: none;
+        position: absolute;
+        left: 500px;
+        top: 700px;
+        width: 1200px; height: 800px;
+        /* background-color: brown; */
+        animation-name: conf;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        animation-duration: 3s;
+      }
+      #confi:hover{
+        cursor: pointer;
+      }
+      @keyframes conf {
+        from{
+          color: white;
+        }
+        to{
+          color: black;
+        }
+      }
 
  
