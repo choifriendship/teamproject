@@ -7,8 +7,9 @@ body{
 /*전체*/
 .contanier{
   width: 1500px;
-  height: 2000px;
+  height: 1900px;
   margin: 0 auto;
+  border: 1px solid white;
 }
 /*헤더*/
 header{
@@ -184,6 +185,8 @@ section{
         /*베너*/
         #banner{
           height: 300px;
+          border-top: 1px solid #ddd;
+          border-bottom: 1px solid #ddd;;
         }
         /*바로가기*/
         .link{
@@ -206,6 +209,8 @@ footer{
 
 #sns > a {
   display: inline-block;
+  position: relative;
+  left: 20px; top:10px;
   text-decoration: none;
   color: #808080;
   font-size: 15px;
@@ -221,28 +226,33 @@ footer{
         #copyright{
           float: left;
           width: 750px; height: 100px;
-          background-color: white;
         }
         #copyright > p > span {
+          position: relative;
+          top: 5px;
           color: black;
           font-size: small;
+          margin: 0px 0px 0px 20px;
         }
         
         /*텍스트박스*/
         #footer_text{
           float: left;
           width: 750px; height: 100px;
-          background-color:white;
           margin: 0 auto;
         }
 
         #footer_text > a > img{
+         position: relative;
+         left: 69%;
          display: block;
-         margin: 5px 565px;
+         margin: 5px;
+
         }
 
         #footer_sns > a > img{
-          float: right;
+          position: relative;
+          left: 50%;
           margin: 0px 0px 5px 5px;
           padding: 5px 0px 0px 0px;
         }
