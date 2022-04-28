@@ -86,7 +86,7 @@ document.querySelector('#reset').addEventListener('click',function(){
 });
 
 conf.addEventListener('click',function(){
-  if(total !=0){    
+  if(total !=0){      
     confi.style.display='block';
     document.querySelector('.contanier').style.opacity='0.1';        
   }
