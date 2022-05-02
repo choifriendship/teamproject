@@ -82,7 +82,6 @@ document.querySelector('#reset').addEventListener('click',function(){
   c11=0;c22=0;c33=0;c44=0;c55=0;c66=0;  
   total=0;
   t.value=null;
-  
 });
 
 conf.addEventListener('click',function(){
@@ -96,7 +95,6 @@ confi.addEventListener('click',function(){
     document.querySelector('.contanier').style.opacity='1.0';
     reset();     
 });
-
 ///////////////////////////////////노가다시작//////////////////////////////////////////
 document.querySelector('#a1').addEventListener('click',function(){
   var i = document.querySelector('#aa1');
@@ -109,14 +107,15 @@ document.querySelector('#a1').addEventListener('click',function(){
   }
 });
 
-function a1p(){
+function a1p(){//플러스
   f1.qua++;
   var i = document.querySelector('#aa1');
   i.innerHTML=f1.name+"&nbsp;&nbsp;&nbsp;"+f1.val+"&nbsp;"+f1.qua+"&emsp;"+"<button id='a1p' onclick='a1p()'>+</button>"+"<button id='a1m' onclick='a1m()'>-</button>";
   total+=f1.val;
   t.value=total;
 }
-function a1m(){
+
+function a1m(){//마이너스
   f1.qua--;  
   var i = document.querySelector('#aa1');
   i.innerHTML=f1.name+"&nbsp;&nbsp;&nbsp;"+f1.val+"&nbsp;"+f1.qua+"&emsp;"+"<button id='a1p' onclick='a1p()'>+</button>"+"<button id='a1m' onclick='a1m()'>-</button>";
@@ -149,6 +148,7 @@ function a2p(){
   total+=f2.val;
   t.value=total;
 }
+
 function a2m(){
   f2.qua--;  
   var i = document.querySelector('#aa2');

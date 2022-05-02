@@ -57,13 +57,13 @@ header{
           top: 50px;
           color: black;
         }
-/*메뉴검색*/
-#navigation{
-  clear: both;
-  height: 100px;
-  background-color: white;
-  z-index: 5;
-}
+        /*메뉴검색*/
+        #navigation{
+          clear: both;
+          height: 100px;
+          background-color: white;
+          z-index: 5;
+        }
         /*네비*/
         nav{
           float: left;
@@ -245,14 +245,14 @@ footer{
 
         #footer_text > a > img{
          position: relative;
-         left: 69%;
+         left: 69.5%;
          display: block;
          margin: 5px;
 
         }
 
         #footer_sns > a > img{
-          position: relative;
+          position:relative;
           left: 50%;
           margin: 0px 0px 5px 5px;
           padding: 5px 0px 0px 0px;

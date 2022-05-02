@@ -14,7 +14,7 @@
         width: 100px;
         padding: 25px;
         font-size: larger;
-        font-weight: 600;
+        font-weight: 600px;
         text-align: center;
         color: black;
       }
@@ -45,7 +45,7 @@
       }
 
 
-      /*아이스크림*/
+      /*아이스크림 탭메뉴*/
 
       .tabContent > .icecream{
         width: 250px;
@@ -56,7 +56,7 @@
         left: 30px;
         padding: 20px;
       }
-
+      
       .icecream{
         border: 1px solid black;
         text-align: center;
@@ -70,7 +70,7 @@
     
       .icecream > .caption{
         position: absolute;
-        top:  250px; /*기준 보다 170px 아래*/
+        top:  250px; /*기준 보다 250px 아래*/
         width: 250px;
         height: 80px;
         background: rgba(0,0,0,0.6);/*반투명한 검정 배경*/
@@ -81,7 +81,7 @@
     
     .icecream:hover .caption{
       opacity: 1;/*설명글이 화면에 보이게*/
-      transform: translateY(-150px);/*설명글이 위로 170px 이동하게*/
+      transform: translateY(-150px);/*설명글이 위로 150px 이동하게*/
     }
     
       /*아이스크림 케이크*/
