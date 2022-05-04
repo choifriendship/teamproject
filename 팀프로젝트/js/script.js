@@ -57,7 +57,7 @@ function item(a,b,c){
 var n1 = [a11,a22,a33,a44,a55,a66,b11,b22,b33,b44,b55,b66,c11,c22,c33,c44,c55,c66];    
 var s1 = [f1,f2,f3,f4,f5,f6,g1,g2,g3,g4,g5,g6,h1,h2,h3,h4,h5,h6];
 
-function reset(){
+function reset(){ // 전체 취소 함수
   for(let i=0;i<p.length;i++){
     p[i].innerHTML="";
   }
@@ -70,6 +70,7 @@ function reset(){
   total=0;
   t.value=null;
 }
+// 전체 취소 눌렀을 때 구현
 document.querySelector('#reset').addEventListener('click',function(){
   for(let i=0;i<p.length;i++){
     p[i].innerHTML="";
@@ -84,13 +85,14 @@ document.querySelector('#reset').addEventListener('click',function(){
   t.value=null;
   
 });
-
+// 구매하기 눌렀을 때 구현
 conf.addEventListener('click',function(){
   if(total !=0){    
     confi.style.display='block';
     document.querySelector('.contanier').style.opacity='0.1';        
   }
 });
+// 주문완료 버튼 눌렀을 때 구현
 confi.addEventListener('click',function(){
   confi.style.display='none';
     document.querySelector('.contanier').style.opacity='1.0';

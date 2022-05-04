@@ -52,8 +52,8 @@ header{
           position: absolute;
           left: 50%;
           line-height: 1.4em;
-          white-space: nowrap;
-          transform: translate(-50%, 0);
+          white-space: nowrap; /* 한 줄이 길어서 넘칠 경우 자동으로 줄 바꿈 방지(줄을 바꾸지 않고 텍스트 박스를 넘어 입력 된다 */
+          transform: translate(-50%, 0); /* 왼쪽으로 부터 -50% */
           top: 50px;
           color: black;
         }
